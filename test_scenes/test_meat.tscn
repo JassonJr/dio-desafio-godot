@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctvtem2o06a5y"]
+
+[ext_resource type="PackedScene" uid="uid://cwwr0xbjfh47b" path="res://misc/meat.tscn" id="1_akxe3"]
+[ext_resource type="PackedScene" uid="uid://bpby4f8c6x4mw" path="res://player/player.tscn" id="2_v1r54"]
+[ext_resource type="PackedScene" uid="uid://cqrcq7qnbje8v" path="res://enemies/sheep.tscn" id="3_epcyc"]
+
+[node name="TestMeat" type="Node2D"]
+
+[node name="Meat" parent="." instance=ExtResource("1_akxe3")]
+position = Vector2(851, 223)
+
+[node name="Player" parent="." instance=ExtResource("2_v1r54")]
+position = Vector2(345, 287)
+health = 75
+
+[node name="Meat2" parent="." instance=ExtResource("1_akxe3")]
+position = Vector2(973, 320)
+
+[node name="Sheep" parent="." instance=ExtResource("3_epcyc")]
+position = Vector2(803, 475)
